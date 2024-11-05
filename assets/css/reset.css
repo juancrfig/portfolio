@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+    list-style: none;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+p,
+li,
+figcaption {
+    text-wrap: pretty;
+}
+
+input {
+    outline: 3px solid hsl(203, 30%, 26%);
+}
+input:not(:placeholder-shown):valid {
+    outline-color: var(--color-success);
+}
+input:not(:placeholder-shown):invalid {
+    outline-color: var(--color-error);
+}
+input:focus:invalid {
+    outline-color: var(--color-warning);
+}
