@@ -48,13 +48,39 @@ body {
 .projects {
     padding-top: 4%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 120%;
 }
 
 h1 {
     font-family: Roboto;
     font-weight: 600;
     font-style: normal;
-    color: var(--blue)
+    color: var(--blue);
+    margin-bottom: 3%;
+}
+
+.grid-box {
+    height: 50%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5%;
+}
+
+.box {
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 2px 15px 15px rgba(0, 0, 0, 0.3);
+    
+}
+
+.box:hover {
+    background-color: var(--blue);
+    cursor: pointer;
+    transition: all 0.5s;
+    scale: 1.05;
 }
 
