@@ -1,12 +1,18 @@
+:root {
+    --blue: #14213D;
+    --yellow: #FCA311;
+    --grey: #E5E5E5;
+}
+
 html, body {
     height: 100%;
     margin: 0;
 }
 
 html {
-    background: linear-gradient(45deg, #14213D, black);
+    background: linear-gradient(45deg, #E5E5E5, #FCA311);
     background-size: 300% 300%;
-    animation: color 20s ease-in-out infinite;
+    animation: color 10s ease-in-out infinite;
 }
 
 body {
@@ -25,3 +31,30 @@ body {
     }
 
 }
+
+.section-box {
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.4);
+    background-color: white;
+    border-radius: 30px;
+    margin: auto;
+}
+
+.main-box {
+    height: 70vh;
+    width: 88vw;
+    margin-top:15vh;
+}
+
+.projects {
+    padding-top: 4%;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-family: Roboto;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--blue)
+}
+
