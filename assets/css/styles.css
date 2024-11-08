@@ -12,7 +12,7 @@ html, body {
 html {
     background: linear-gradient(45deg, #E5E5E5, #FCA311);
     background-size: 300% 300%;
-    animation: color 10s ease-in-out infinite;
+    animation: color 6s ease-in-out infinite;
 }
 
 body {
@@ -67,20 +67,18 @@ h1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 5%;
+    gap: 10%;
 }
 
 .box {
-    border: 1px solid black;
     border-radius: 20px;
-    box-shadow: 2px 15px 15px rgba(0, 0, 0, 0.3);
-    
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+    border-top: 2px solid var(--grey);
+    transition: all 0.5s ;    
 }
 
 .box:hover {
-    background-color: var(--blue);
     cursor: pointer;
-    transition: all 0.5s;
     scale: 1.05;
 }
 
