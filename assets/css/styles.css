@@ -117,6 +117,13 @@ h1 {
     margin-bottom: 3%;
 }
 
+h3 {
+    font-family: Roboto;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--text-color);    
+}
+
 .grid-box {
     height: 85%;
     width: 80%;
@@ -131,7 +138,9 @@ h1 {
     border-radius: 20px;
     box-shadow: 3px 3px 6px  var(--shadow-color);
     border-top: 2.5px solid var(--shadow-color-up);
-    transition: all 500ms ;    
+    transition: all 500ms ;
+    text-align: center;
+    padding: 15% 5%; 
 }
 
 .box:hover {
