@@ -9,13 +9,13 @@
 }
 
 .dark-mode {
-    --bg-color-1: #650000;
-    --bg-color-2: #0F0606;
+    --bg-color-1: #14213D;
+    --bg-color-2: black;
     --text-color: white;
     --box-color: black;
-    --shadow-color: #2F0000;
-    --shadow-color-up: #2F0000;
-    --shadow-hover-color: #650000;
+    --shadow-color: #14213D;
+    --shadow-color-up: #14213D;
+    --shadow-hover-color: #325ab1;
 }
 
 html, body {
