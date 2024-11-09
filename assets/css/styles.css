@@ -17,6 +17,7 @@ html {
 
 body {
     overflow: auto; /* Ensures scrolling behavior, if needed */
+    padding-top: 8%;
 }
 
 @keyframes color {
@@ -32,42 +33,48 @@ body {
 
 }
 
+/*
+---------------------------------------
+PROJECTS SECTION 
+---------------------------------------
+*/
+
 .section-box {
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.4);
     background-color: white;
     border-radius: 30px;
     margin: auto;
+    width: 88vw;
 }
 
 .main-box {
-    height: 70vh;
-    width: 88vw;
-    margin-top:15vh;
+    height: 35vw;
+    margin-top:1.5%;
 }
 
 .projects {
-    padding-top: 4%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 120%;
+    height: 100%;
+    padding: 3% 0%;
 }
 
 h1 {
     font-family: Roboto;
-    font-weight: 600;
+    font-weight: 400;
     font-style: normal;
     color: var(--blue);
     margin-bottom: 3%;
 }
 
 .grid-box {
-    height: 50%;
+    height: 70%;
     width: 80%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 10%;
+    gap: 6%;
 }
 
 .box {
@@ -82,3 +89,44 @@ h1 {
     scale: 1.05;
 }
 
+/* 
+---------------------------------------
+HEADER
+---------------------------------------
+*/
+
+.header{
+    height: 7vw;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
+    justify-content: center;
+    gap: 5%;
+}
+
+.header h2 {
+    font-family: Roboto;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--blue);
+}
+
+#ippo {
+    width: 7%;
+    height: 85%;
+    border-radius: 30px;
+}
+
+.country-info {
+    width: 22%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0.9%;
+}
+
+#flag {
+    width: 15%;
+    height: 75%;
+}
