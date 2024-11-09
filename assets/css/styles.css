@@ -10,7 +10,7 @@ html, body {
 }
 
 html {
-    background: linear-gradient(45deg, #E5E5E5, #FCA311);
+    background: linear-gradient(45deg, #650000, #0F0606);
     background-size: 300% 300%;
     animation: color 6s ease-in-out infinite;
 }
@@ -72,7 +72,7 @@ PROJECTS SECTION
 
 .section-box {
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.4);
-    background-color: white;
+    background-color: black;
     border-radius: 30px;
     margin: auto;
     width: 88vw;
@@ -95,7 +95,7 @@ h1 {
     font-family: Roboto;
     font-weight: 400;
     font-style: normal;
-    color: var(--blue);
+    color: white;
     margin-bottom: 3%;
 }
 
@@ -110,14 +110,16 @@ h1 {
 
 .box {
     border-radius: 20px;
-    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
-    border-top: 2px solid var(--grey);
+    box-shadow: 1px 3px 8px  #2F0000;
+    border-top: 2px solid #2F0000;
     transition: all 500ms ;    
 }
 
 .box:hover {
     cursor: pointer;
     scale: 1.05;
+    box-shadow: 1px 7px 7px  #650000;
+
 }
 
 /* 
@@ -140,7 +142,7 @@ HEADER
     font-family: Roboto;
     font-weight: 300;
     font-style: italic;
-    color: var(--blue);
+    color: white;
 }
 
 #ippo {
