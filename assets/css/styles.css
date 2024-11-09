@@ -1,7 +1,19 @@
 :root {
-    --blue: #14213D;
-    --yellow: #FCA311;
-    --grey: #E5E5E5;
+    --text-color: #14213D;
+    --bg-color-2: #FCA311;
+    --bg-color-1: #E5E5E5;
+    --box-color: white;
+    --shadow-color : black;
+    --shadow-color-up : #E5E5E5;
+}
+
+.dark-mode {
+    --bg-color-1: #650000;
+    --bg-color-2: #0F0606;
+    --text-color: white;
+    --box-color: black;
+    --shadow-color: #2F0000;
+    --shadow-hover-color: #650000;
 }
 
 html, body {
@@ -9,8 +21,8 @@ html, body {
     margin: 0;
 }
 
-html {
-    background: linear-gradient(45deg, #650000, #0F0606);
+body {
+    background: linear-gradient(45deg, var(--bg-color-1), var(--bg-color-2));
     background-size: 300% 300%;
     animation: color 6s ease-in-out infinite;
 }
@@ -72,10 +84,14 @@ PROJECTS SECTION
 
 .section-box {
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.4);
-    background-color: black;
+    background-color: var(--box-color);
     border-radius: 30px;
     margin: auto;
     width: 88vw;
+}
+
+.section-box .dark-mode {
+    background-color: var();
 }
 
 .main-box {
@@ -88,37 +104,38 @@ PROJECTS SECTION
     flex-direction: column;
     align-items: center;
     height: 100%;
-    padding: 3% 0%;
+    padding: 4% 0% 5% 0%;
 }
 
 h1 {
     font-family: Roboto;
     font-weight: 400;
     font-style: normal;
-    color: white;
+    color: var(--text-color);
     margin-bottom: 3%;
 }
 
 .grid-box {
-    height: 80%;
+    height: 85%;
     width: 80%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 6%;
+    row-gap: 12%;
 }
 
 .box {
     border-radius: 20px;
-    box-shadow: 1px 3px 8px  #2F0000;
-    border-top: 2px solid #2F0000;
+    box-shadow: 1px 3px 8px  var(--shadow-color);
+    border-top: 2px solid var(--shadow-color-up);
     transition: all 500ms ;    
 }
 
 .box:hover {
     cursor: pointer;
     scale: 1.05;
-    box-shadow: 1px 7px 7px  #650000;
+    box-shadow: 1px 7px 7px var(--shadow-hover-color);
 
 }
 
@@ -142,7 +159,7 @@ HEADER
     font-family: Roboto;
     font-weight: 300;
     font-style: italic;
-    color: white;
+    color: var(--text-color);
 }
 
 #ippo {
