@@ -5,6 +5,7 @@
     --box-color: white;
     --shadow-color : black;
     --shadow-color-up : #E5E5E5;
+    --shadow-hover-color: black;
 }
 
 .dark-mode {
@@ -13,6 +14,7 @@
     --text-color: white;
     --box-color: black;
     --shadow-color: #2F0000;
+    --shadow-color-up: #2F0000;
     --shadow-hover-color: #650000;
 }
 
@@ -127,8 +129,8 @@ h1 {
 
 .box {
     border-radius: 20px;
-    box-shadow: 1px 3px 8px  var(--shadow-color);
-    border-top: 2px solid var(--shadow-color-up);
+    box-shadow: 3px 3px 6px  var(--shadow-color);
+    border-top: 2.5px solid var(--shadow-color-up);
     transition: all 500ms ;    
 }
 
