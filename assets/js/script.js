@@ -1,7 +1,14 @@
-const toggleButton = document.getElementById('toggleDarkMode');
+const navbar = document.querySelector('nav');
 
-function toggleDarkMode() {
-    document.body.classList.toggle('dark-mode');
-}
+window.addEventListener('scroll', () => {
 
-toggleButton.addEventListener('click', toggleDarkMode);
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const windowHeight = window.innerHeight;
+    const documentHeight = document.documentElement.scrollHeight;
+
+    if (scrollTop > windowHeight * 0.2) {
+        navbar.classList.add('minimized');
+    } else {
+        navbar.classList.remove('minimized');
+    }
+})

@@ -1,194 +1,81 @@
 :root {
-    --text-color: #14213D;
-    --bg-color-2: #FCA311;
-    --bg-color-1: #E5E5E5;
-    --box-color: white;
-    --shadow-color : black;
-    --shadow-color-up : #E5E5E5;
-    --shadow-hover-color: black;
-}
-
-.dark-mode {
-    --bg-color-1: #14213D;
-    --bg-color-2: black;
-    --text-color: white;
-    --box-color: black;
-    --shadow-color: #14213D;
-    --shadow-color-up: #14213D;
-    --shadow-hover-color: #325ab1;
-}
-
-html, body {
-    height: 100%;
-    margin: 0;
+    --lion: hsla(31, 27%, 60%, 1);
+    --rich-black: hsla(223, 61%, 8%, 1);
+    --davys-gray: hsla(240, 4%, 36%, 1);
+    --black: hsla(240, 100%, 0%, 1);
+    --prussian-blue: hsla(211, 53%, 20%, 1);
+    --butterscotch: hsla(34, 55%, 55%, 1);
+    --gunmetal: hsla(218, 24%, 21%, 1);
 }
 
 body {
-    background: linear-gradient(45deg, var(--bg-color-1), var(--bg-color-2));
-    background-size: 300% 300%;
-    animation: color 6s ease-in-out infinite;
+    background-color: var(--black);
+    color: var(--grey);
+    font-family: 'Space Grotesk';
 }
 
-body {
-    overflow: auto; /* Ensures scrolling behavior, if needed */
-    padding-top: 8%;
-}
-
-/* 
-------------------------------------
-ANIMATIONS
-------------------------------------
-*/
-
-@keyframes color {
-    0% {
-        background-position: 0 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0 50%;
-    }
-
-}
-
-.button:hover {
-    cursor: pointer;
-    scale: 1.05;
-}
-
-.sun-box {
-    position: absolute;
-    top: 2%;
-    right: 1%;
-    height: 7%;
-    width: 3%;
-    background-color: transparent;
-    border: none
-}
-
-#sun {
-    width: 60%;
-    transition: all 500ms ;    
-}
-
-#sun:hover {
-    scale: 1.3;
-}
-
-
-/*
----------------------------------------
-PROJECTS SECTION 
----------------------------------------
-*/
-
-.section-box {
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.4);
-    background-color: var(--box-color);
-    border-radius: 30px;
+nav {
+    position: fixed;
+    top: 0;
+    left: 25%;
+    height: 6vh;
+    width: 50vw;
+    background-color: var(--white);
+    border-radius: 10px 10px 50px 50px;
     margin: auto;
-    width: 88vw;
+    color: var(--white);
+    transition: all 400ms ease-in-out;
+    background: hsl( 0 0% 100% / .1);
+    backdrop-filter: blur(1rem);
 }
 
-.section-box .dark-mode {
-    background-color: var();
+.minimized {
+    transform: translateY(-65%);
 }
 
-.main-box {
-    height: 35vw;
-    margin-top:1.5%;
+.minimized:hover {
+    transform: translateY(0);
 }
 
-.projects {
+ul {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 0.6em;
+}
+
+li {
+    transition: all 500ms ease-in-out;
+}
+
+li:hover {
+    font-weight: 900;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+#welcome-section {
+    height: 100vh;
+    background-color: var(--black);
+    background-image: url('../images/earth.jpg');
+    background-size: cover;
+
+    display: flex;
     align-items: center;
-    height: 100%;
-    padding: 4% 0% 5% 0%;
+    justify-content: space-around;
 }
 
 h1 {
-    font-family: Roboto;
+    font-size: 4rem;
+    color: var(--white);
+    font-family: 'Space Grotesk';
     font-weight: 400;
-    font-style: normal;
-    color: var(--text-color);
-    margin-bottom: 3%;
+    text-shadow: black 0px 0px 10px;
 }
 
-h3 {
-    font-family: Roboto;
-    font-weight: 400;
-    font-style: italic;
-    color: var(--text-color);    
-}
-
-.grid-box {
-    height: 85%;
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 6%;
-    row-gap: 12%;
-}
-
-.box {
-    border-radius: 20px;
-    box-shadow: 3px 3px 6px  var(--shadow-color);
-    border-top: 2.5px solid var(--shadow-color-up);
-    transition: all 500ms ;
-    text-align: center;
-    padding: 15% 5%; 
-}
-
-.box:hover {
-    cursor: pointer;
-    scale: 1.05;
-    box-shadow: 1px 7px 7px var(--shadow-hover-color);
-
-}
-
-/* 
----------------------------------------
-HEADER
----------------------------------------
-*/
-
-.header{
-    height: 7vw;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    padding-left: 2%;
-    justify-content: center;
-    gap: 5%;
-}
-
-.header h2 {
-    font-family: Roboto;
-    font-weight: 300;
-    font-style: italic;
-    color: var(--text-color);
-}
-
-#ippo {
-    width: 7%;
-    height: 85%;
-    border-radius: 30px;
-}
-
-.country-info {
-    width: 22%;
-    height: 50%;
-    display: flex;
-    justify-content: space-around;
-    padding-top: 0.9%;
-}
-
-#flag {
-    width: 15%;
-    height: 75%;
+#work-section {
+    height: 100vh;
+    background-color: var(--black);
+    border-top: 2px solid var(--grey);
 }
 

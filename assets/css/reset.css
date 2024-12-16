@@ -43,3 +43,7 @@ input:not(:placeholder-shown):invalid {
 input:focus:invalid {
     outline-color: var(--color-warning);
 }
+
+body {
+    height: 100vh;
+}
