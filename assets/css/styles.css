@@ -172,7 +172,6 @@ h1 {
 }
 
 
-
 /* 
 ------------------------------
 WORK
@@ -182,8 +181,19 @@ WORK
 
 #work {
     height: 100vh;
-    background-color: var(--black);
-    border-top: 40px solid var(--butterscotch);
+    background-color: var(--rich-black);
+}
+
+.quote {
+    background-color: var(--butterscotch);
+    height: 10vh;
+}
+
+.quote p {
+    padding-top: .6em;
+    font-size: 1.5rem;
+    text-align: center;
+    font-style: italic;
 }
 
 
