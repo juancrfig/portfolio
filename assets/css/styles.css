@@ -31,6 +31,18 @@ ANIMATIONS
       text-decoration-color: var(--butterscotch);
     }
   }
+
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+  }
+  
+  .animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
 /* 
 ------------------------------
 NAVBAR
@@ -162,7 +174,7 @@ h1 {
     text-decoration: underline;
     text-decoration-thickness: 3px;
     text-underline-offset: 5px;
-    text-shadow: black 0px 0px 10px;
+    text-shadow: black 0px 0px 15px;
 }
 
 #reading {
@@ -186,14 +198,15 @@ WORK
 
 .quote {
     background-color: var(--butterscotch);
-    height: 10vh;
+    height: 11vh;
 }
 
 .quote p {
-    padding-top: .6em;
+    padding-top: .8em;
     font-size: 1.5rem;
     text-align: center;
     font-style: italic;
 }
+
 
 
