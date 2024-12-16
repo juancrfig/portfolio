@@ -44,6 +44,11 @@ input:focus:invalid {
     outline-color: var(--color-warning);
 }
 
+a {
+    text-decoration: none;
+    color: inherit
+}
+
 body {
     height: 100vh;
 }
