@@ -39,7 +39,7 @@ const observer = new IntersectionObserver((entries) => {
       }
     });
   }, {
-    threshold: 0.1 // Triggers when 10% of the element is visible
+    threshold: 0.5 // Triggers when 10% of the element is visible
   });
   
   // Select all elements you want to animate

@@ -1,3 +1,9 @@
+@property --gradient-angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
 :root {
     --lion: hsla(31, 27%, 60%, 1);
     --rich-black: hsla(223, 61%, 8%, 1);
@@ -42,6 +48,12 @@ ANIMATIONS
     opacity: 1;
     transform: translateY(0);
   }
+
+@keyframes rotation {
+    0% { --gradient-angle: 0deg; }
+    100% { --gradient-angle: 360deg; }
+}
+
 
 /* 
 ------------------------------
@@ -183,18 +195,12 @@ h1 {
     text-shadow: black 0px 0px 10px;
 }
 
-
 /* 
 ------------------------------
-WORK
+QUOTES
 ------------------------------
 */
 
-
-#work {
-    height: 100vh;
-    background-color: var(--rich-black);
-}
 
 .quote {
     background-color: var(--butterscotch);
@@ -209,4 +215,53 @@ WORK
 }
 
 
+/* 
+------------------------------
+WORK
+------------------------------
+*/
+
+
+#work {
+    height: 100vh;
+    background-color: var(--rich-black);
+    padding: 6em 0;
+    text-align: center;
+}
+
+.projects {
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    border-radius: 50px;
+    gap: 1.5em;
+}
+
+.project {
+    position: relative; /* Establishes positioning context */
+    border-radius: 50px;
+    background-color: var(--lion);
+    z-index: 100;
+}
+
+.project::before,
+.project::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        var(--butterscotch),
+        var(--white)
+        var(--prussian-blue)
+        var(--davys-gray));
+    animation: rotation 20s linear infinite;
+    border-radius: inherit;
+}
+
+.project::after {
+    filter: blur(3.5rem);
+}
 
