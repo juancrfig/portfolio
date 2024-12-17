@@ -39,7 +39,7 @@ const observer = new IntersectionObserver((entries) => {
       }
     });
   }, {
-    threshold: 0.8 // Triggers when 10% of the element is visible
+    threshold: 0.7 // Triggers when 10% of the element is visible
   });
   
   // Select all elements you want to animate
@@ -67,3 +67,7 @@ const randomNumber = Math.floor(Math.random() * quotes.length)
 
 quoteElement.textContent = quotes[randomNumber].quote;
 authorElement.textContent = quotes[randomNumber].author;
+
+// ----------------------------------------
+// DROPDOWN MENU
+// ----------------------------------------

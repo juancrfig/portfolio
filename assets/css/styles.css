@@ -77,7 +77,7 @@ nav {
 ul {
     display: flex;
     justify-content: space-around;
-    padding-top: .6em;
+    padding-top: .5em;
 }
 
 li {
@@ -93,11 +93,11 @@ li:hover {
 
 /* 
 ------------------------------
-WELCOME
+HOME
 ------------------------------
 */
 
-#welcome {
+#home {
     height: 100vh;
     background-color: var(--black);
     background-image: url('../images/earth.jpg');
@@ -117,7 +117,7 @@ h1 {
     margin-bottom: 1.5em;
 }
 
-#welcome span {
+#home span {
     transition: animation 500ms ease-in-out;
     font-size: 5.2rem;
     color: var(--butterscotch);
@@ -162,7 +162,7 @@ h1 {
     height: 100%;
     border-radius: 50px;
     margin: auto;
-    margin-top: 2em;
+    margin-top: 1.5em;
     font-size: 2.5rem;
 
 }
@@ -194,7 +194,7 @@ QUOTES
 
 .quote {
     background-color: var(--butterscotch);
-    height: 15vh;
+    height: 17vh;
 }
 
 .quote p {
@@ -213,10 +213,14 @@ WORK
 
 
 #work {
-    height: 140vh;
+    height: 165vh;
     background-color: var(--rich-black);
     padding: 6em 0;
     text-align: center;
+}
+
+#work h1 {
+    margin-bottom: 1.5em;
 }
 
 .projects {
@@ -233,8 +237,17 @@ WORK
 .project {
     border-radius: 50px;
     box-shadow: 2px 2px 8px white;
-    
 }
+
+/* DROPDOWN MENU */
+
+.search-box {
+    width: 82%;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 2em;
+}
+
 
 
 /* 
@@ -245,5 +258,104 @@ ABOUT
 
 .separator {
     height: 10vh;
-    background-color: var(--davys-gray);
+    background-color: var(--butterscotch);
+}
+
+#about {
+    min-height: 100vh;
+    padding: 6em 10em;
+    background-color: var(--rich-black);
+    text-align: center;
+}
+
+#about p {
+    font-size: 1.3rem;
+}
+
+.basic-info {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 4em;
+}
+
+#basic-info p {
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.flag-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5em;
+}
+
+#flag {
+    width: 5rem;
+}
+
+
+
+/* 
+------------------------------
+TIMELINE
+------------------------------
+*/
+
+#timeline {
+    min-height: 120vh;
+    padding: 6em 10em;
+    background-color: var(--rich-black);
+    text-align: center;
+}
+
+
+/* 
+------------------------------
+CONTACT
+------------------------------
+*/
+
+#contact {
+    min-height: 85vh;
+    padding: 6em 10em;
+    background-color: var(--rich-black);
+    text-align: center;
+}
+
+.contact-flex {
+    height: 20vh;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-element {
+    height: 80%;
+    aspect-ratio: 1 / 1;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+}
+
+.contact-element:hover {
+    scale: 1.15
+}
+
+#contact img{
+    display: block;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.x-box {
+    background-color: whitesmoke;
+    padding: 1em;
+}
+
+#email {
+    font-size: 1.8rem;
+    margin-top: 1em;
+    cursor: text;
 }
