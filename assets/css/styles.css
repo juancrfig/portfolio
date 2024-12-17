@@ -1,9 +1,3 @@
-@property --gradient-angle {
-    syntax: "<angle>";
-    initial-value: 0deg;
-    inherits: false;
-}
-
 :root {
     --lion: hsla(31, 27%, 60%, 1);
     --rich-black: hsla(223, 61%, 8%, 1);
@@ -41,18 +35,13 @@ ANIMATIONS
   .animate-on-scroll {
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 1s, transform 1s;
+    transition: opacity 2s, transform 2s;
   }
   
   .animate-on-scroll.visible {
     opacity: 1;
     transform: translateY(0);
   }
-
-@keyframes rotation {
-    0% { --gradient-angle: 0deg; }
-    100% { --gradient-angle: 360deg; }
-}
 
 
 /* 
@@ -65,7 +54,7 @@ nav {
     position: fixed;
     top: 0;
     left: 25%;
-    height: 6vh;
+    height: 7vh;
     width: 50vw;
     background-color: var(--white);
     border-radius: 10px 10px 50px 50px;
@@ -74,6 +63,7 @@ nav {
     background: hsl( 0 0% 100% / .1);
     backdrop-filter: blur(1rem);
     font-size: 1.2rem;
+    z-index: 100;
 }
 
 .minimized {
@@ -87,7 +77,7 @@ nav {
 ul {
     display: flex;
     justify-content: space-around;
-    padding-top: .9em;
+    padding-top: .6em;
 }
 
 li {
@@ -154,12 +144,12 @@ h1 {
 
 .status {
     width: 30vw;
-    height: 40vh;
+    height: 45%;
     background: hsl( 0 0% 100% / .1);
     backdrop-filter: blur(0.4rem);
     border-radius: 50px;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: .5em;
 }
 
@@ -169,10 +159,10 @@ h1 {
 
 .card {
     width: 100%;
-    height: 65%;
+    height: 100%;
     border-radius: 50px;
     margin: auto;
-    margin-top: 2.3em;
+    margin-top: 2em;
     font-size: 2.5rem;
 
 }
@@ -190,7 +180,7 @@ h1 {
 }
 
 #reading {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     margin-top: 4.5em;
     text-shadow: black 0px 0px 10px;
 }
@@ -204,12 +194,12 @@ QUOTES
 
 .quote {
     background-color: var(--butterscotch);
-    height: 11vh;
+    height: 15vh;
 }
 
 .quote p {
     padding-top: .8em;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-align: center;
     font-style: italic;
 }
@@ -223,15 +213,15 @@ WORK
 
 
 #work {
-    height: 100vh;
+    height: 140vh;
     background-color: var(--rich-black);
     padding: 6em 0;
     text-align: center;
 }
 
 .projects {
-    height: 80%;
-    width: 80%;
+    width: 70%;
+    aspect-ratio: 1 / .5;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -241,27 +231,19 @@ WORK
 }
 
 .project {
-    position: relative; /* Establishes positioning context */
     border-radius: 50px;
-    background-color: var(--lion);
-    z-index: 100;
+    box-shadow: 2px 2px 8px white;
+    
 }
 
-.project::before,
-.project::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        var(--butterscotch),
-        var(--white)
-        var(--prussian-blue)
-        var(--davys-gray));
-    animation: rotation 20s linear infinite;
-    border-radius: inherit;
-}
 
-.project::after {
-    filter: blur(3.5rem);
-}
+/* 
+------------------------------
+ABOUT
+------------------------------
+*/
 
+.separator {
+    height: 10vh;
+    background-color: var(--davys-gray);
+}
