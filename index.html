@@ -13,116 +13,23 @@
     <link rel="icon" href="./assets/images/mind-icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/reset.css" type="text/css">
     <link rel="stylesheet" href="./assets/css/styles.css" type="text/css">
-    <meta name="description" content="Just a résumé">
-    <title>Figueroa</title>
+    <script src="./assets/js/script.js" defer></script>
+    <title>Figueroa's Portfolio</title>
 </head>
-<script src="./assets/js/script.js" defer></script>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#timeline">Timeline</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="home">
-            <h1 class='animate-on-scroll'>
-                Let's <span class="underline-container">
-                    <span>build</span>
-                    <div class="underline-effect"></div>
-                </span> 
-                the <span class="underline-container">
-                    <span>future</span>
-                    <div class="underline-effect"></div>
-                </span>
-            </h1>
-                <div class="status animate-on-scroll">
-                <p>Currently working on</p>
-                <div class="card">
-                    <a href="https://developer.mozilla.org/en-US/curriculum/" target="_blank">MDN Curriculum</a>
-                    <p id="reading">Reading: The Innovators by Walter Isaacson</p>
-                </div>
-            </div>
-        </section>
-        <div class="quote">
-            <p id="quote"></p>
-            <p id="author"></p>
+    <header>
+        <div class="frame">
+            <img src="./assets/media/viktorArcane.png" alt="Viktor from Arcane">
         </div>
-        <section id="work">
-            <h1 class="animate-on-scroll">What I've built</h1>
-            <div class="search-box animate-on-scroll">
-                <select id="main-dropdown">
-                    <option value="" disabled selected>Select by</option>
-                    <optgroup label="Language">
-                        <option value="python">Python</option>
-                        <option value="java">Java</option>
-                        <option value="c">C</option>
-                        <option value="javascript">JavaScript</option>
-                    </optgroup>
-                    <optgroup label="Field">
-                        <option value="devops">DevOps</option>
-                        <option value="cybersecurity">Cybersecurity</option>
-                        <option value="videogames">Videogames</option>
-                        <option value="ai">Artificial Intelligence</option>
-                        <option value="webdev">Web Development</option>
-                        <option value="blockchain">Blockchain</option>
-                    </optgroup>
-                </select>
+        <h1 class="type-effect" data-text="Juan Figueroa"></h1>
+        <h2 class="type-effect" data-text="Junior Full-Stack Developer"></h2>
+        <div class="flex">
+            <div>
+                <h3 class="type-effect" data-text="Currently living in "></h3>
+                <img src="./assets/media/colombian-flag.png" alt="Colombian flag" id="flag">
             </div>
-            <div class="projects">
-                <div class="project animate-on-scroll"></div>
-                <div class="project animate-on-scroll"></div>
-                <div class="project animate-on-scroll"></div>
-                <div class="project animate-on-scroll"></div>
-                <div class="project animate-on-scroll"></div>
-                <div class="project animate-on-scroll"></div>
-            </div>
-        </section>
-        <div class="separator"></div>
-        <section id="about">
-            <h1 class="animate-on-scroll">Who Am I?</h1>
-            <div class="basic-info animate-on-scroll" id="basic-info">
-                <div class="flag-box">
-                    <p >Currently living in </p>
-                    <img id="flag" src="./assets/images/argentinian-flag.webp" alt="Argentinian Flag" title="Argentina">
-                </div>
-                <p>Age: 23</p>
-            </div>
-            <p class="animate-on-scroll">
-                I was born in Colombia, and from a young age, I've been drawn to diverse interests like video games, art, and sports. Some of my fondest childhood memories include hacking a Facebook game and attempting to teach myself Japanese. However, I lacked the discipline to focus deeply, and my wide-ranging interests meant I couldn't excel in a particular area. I distinctly remember deciding that I needed to approach every experience as a learning opportunity, a mindset I've cultivated ever since.
-            </p>
-            <p class="animate-on-scroll">
-                Today, I'm deeply interested in technology, feeling it's a way to honor my younger self's curiosity. I now have the maturity to harness that curiosity and blend it with discipline. I believe this is one of the most fascinating eras in human history, and I'm determined to contribute meaningfully rather than just be a spectator.
-            </p>
-        </section>
-        <div class="separator"></div>
-        <section id="timeline">
-            <h1 class="animate-on-scroll">Timeline</h1>
-        </section>
-        <div class="separator"></div>
-        <section id="contact">
-            <h1 class="animate-on-scroll">Contact</h1>
-            <div class="contact-flex">
-                <div class="contact-element animate-on-scroll">
-                    <a href="https://github.com/juancrfig" target="_blank"><img src="./assets/images/github.svg" alt=""></a>
-                </div>
-                <div class="contact-element animate-on-scroll x-box">
-                    <a href="https://x.com/juancrfig" target="_blank"><img src="./assets/images/x-icon.png" alt=""></a>
-                </div>
-                <div class="contact-element animate-on-scroll">
-                    <a href="https://www.linkedin.com/in/juan-ram%C3%ADrez-6a7435203/" target="_blank"><img src="./assets/images/linkedin.png" alt=""></a>
-                </div>
-                <div class="contact-element animate-on-scroll">
-                    <p id="email">juancrfig@gmail.com</p>
-                </div>
-            </div>
-        </section>
-        <div class="separator"></div>
-    </main>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+            <h3 class="type-effect" data-text="Age: 23"></h3>
+        </div>
+    </header>
 </body>
 </html>
