@@ -72,7 +72,7 @@
 // // DROPDOWN MENU
 // // ----------------------------------------
 
-const typingSpeed = 100; // Typing speed in milliseconds
+const typingSpeed = 80; // Typing speed in milliseconds
 
 function typeEffect(element) {
 

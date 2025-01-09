@@ -19,9 +19,13 @@
 body {
     background-color: #1F1F1F;
     font-family: "Space Grotesk";
-    padding: 3em 1em;
+    padding: 3em 0;
     color: var(--timberwolf);
     text-align: center;
+}
+
+header {
+    min-height: 370px;
 }
 
 .frame img {
@@ -39,7 +43,7 @@ header h1 {
     animation: blink 0.7s steps(1) infinite;
     font-weight: 400;
     font-size: 1.8rem;
-    margin: 1em 0 .5em 0;
+    margin: 1.5em 0 .5em 0;
 }
 
 header h2 {
@@ -74,4 +78,31 @@ header h3::after {
     display: flex;
     gap: 4em;
     justify-content: center;
+}
+
+#blog {
+    display: flex;
+    width: 40%;
+    height: 3rem;
+    margin: 3.5em auto 1em auto;
+    background-color: var(--timberwolf);
+    border-radius: 15px;
+    transition: scale 100ms ease-in-out;
+    color: var(--black);
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1em .5em;
+    max-width: 250px;
+}
+
+#blog:active {
+    scale: 0.9;
+}
+
+.separator {
+    margin-top: 5em;
+    height: 18px;
+    width: 100%;
+    background-color: var(--selective-yellow);
 }
