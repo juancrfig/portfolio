@@ -2,18 +2,11 @@
     --selective-yellow: hsla(40, 98%, 59%, .8);
     --persian-indigo: hsla(268, 100%, 23%, 1);
     --indigo: hsla(279, 100%, 30%, 1);
-    --timberwolf: hsla(0, 12%, 87%, .8);
+    --timberwolf: hsla(0, 12%, 87%, .8);  /* rgb(226, 218, 218) */
     --black: #121212;
 }
 
 /* ANIMATIONS */
-
-@keyframes blink {
-    50% {
-      border-color: transparent;
-    }
-}
-
 
 
 body {
@@ -33,7 +26,8 @@ header {
     height: clamp(200px, 5vw, 500px);
     display: block;
     margin: auto;
-    filter: drop-shadow(0px 0px 4px #2f93f8)  
+    filter: drop-shadow(0px 0px 4px #2f93f8);
+    margin-top: 1em;
 }
 
 header h1 {
@@ -80,11 +74,11 @@ header h3::after {
     justify-content: center;
 }
 
-#blog {
+/* #blog {
     display: flex;
     width: 40%;
     height: 3rem;
-    margin: 1.5em auto 0 auto;
+    margin: 1.5em auto 2em auto;
     background-color: var(--timberwolf);
     border-radius: 15px;
     transition: scale 100ms ease-in-out;
@@ -98,6 +92,16 @@ header h3::after {
 
 #blog:active {
     scale: 0.9;
+} */
+
+#github-icon {
+    width: clamp(60px, 5vw, 70px);
+    margin-top: 1em;
+    transition: scale 300ms ease-in-out;
+}
+
+#github-icon:hover {
+    scale: 1.1
 }
 
 .separator {
@@ -107,19 +111,8 @@ header h3::after {
 }
 
 .separator-header {
-    margin-top: 5em;
+    margin-top: 4em;
 }
-
-
-#projects {
-    min-height: 100vh;
-}
-
-#projects h1 {
-    font-size: 2rem;
-    margin: 1.25em 0;
-}
-
 
 #contact {
     min-height: 40vh;
@@ -140,4 +133,44 @@ header h3::after {
     display: flex;
     justify-content: center;
     gap: 2em;
+}
+
+
+/* 
+----------------------------
+PROJECTS SECTION
+----------------------------
+*/
+
+
+#projects {
+    min-height: 100vh;
+}
+
+#projects h1 {
+    font-size: 2rem;
+    margin: 2em 0;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.project {
+    height: clamp(225px, 20vh, 300px);
+    width: clamp(380px, 30vw, 800px);
+    margin: auto;
+    border-radius: 25px;
+    box-shadow: 0px 0px 8px 3px rgba(228, 218, 216, .6);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.project img {
+    width: 30px;
+    border-radius: 6px;
 }
