@@ -1,0 +1,9 @@
+body {
+    font-family: "Space Grotesk";
+}
+
+#viktorPic {
+    display: block;
+    border-radius: 200px;
+    height: clamp(180px, 30vw, 300px);
+}
