@@ -18,65 +18,159 @@
     <title>Portfolio</title>
 </head>
 <body class="min-h-screen bg-base-300 h-screen">
-    <main class="min-h-full p-1" id="welcome">
-    <div class="navbar bg-base-100 shadow-sm fixed top-0">
-      <div class="navbar-start">
-        <div class="dropdown">
-          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
-          </div>
-          <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-            <li><a>Home</a></li>
-            <li><a>Projects</a></li>
-            <li><a>About</a></li>
-          </ul>
-        </div>
-        <label class="flex cursor-pointer gap-2">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round">
-            <circle cx="12" cy="12" r="5" />
-            <path
-              d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" />
-          </svg>
-          <input type="checkbox" value="synthwave" class="toggle theme-controller" />
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-          </svg>
-        </label>
-      </div>
-      <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1">
-          <li><a>Home</a></li>
-          <li><a>Projects</a></li>
-          <li><a>About</a></li>
-        </ul>
-      </div>
-      <div class="navbar-end">
-        <a href="https://www.github.com/juancrfig"><img src="./src/media/github-sign.png" class="w-12"></a>
-      </div>
-    </div>
-    <div class="m-auto w-fit mt-32">
-        <img src="./src/media/viktorArcane.png" id="viktorPic">
-    </div>
-    <h1 class="text-center text-2xl mt-4">Juan Figueroa</h1>
-    <h1 class="text-center text-3xl mt-4">Full Stack Developer</h1>
+    <main>
+        <section class="min-h-full p-1" id="home">
+            <div class="navbar bg-base-100 shadow-sm fixed top-0">
+              <div class="navbar-start">
+                <div class="dropdown">
+                  <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                  </div>
+                  <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="https://www.juancrfig.github.io/blog/">My Blog</a></li>
+                    <li><a href="#about">About</a></li>
+                  </ul>
+                </div>
+                <label class="flex cursor-pointer gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5" />
+                    <path
+                      d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" />
+                  </svg>
+                  <input type="checkbox" value="synthwave" class="toggle theme-controller" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                  </svg>
+                </label>
+              </div>
+              <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="https://www.juancrfig.github.io/blog/">My Blog</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+              </div>
+              <div class="navbar-end">
+                <a href="https://www.github.com/juancrfig"><img src="./src/media/github-sign.png" class="w-12"></a>
+              </div>
+            </div>
+            <div class="m-auto w-fit mt-32">
+                <img src="./src/media/viktorArcane.png" id="viktorPic">
+            </div>
+            <h1 class="text-center text-2xl mt-4">Juan Figueroa</h1>
+            <h1 class="text-center text-3xl mt-4">Full Stack Developer</h1>
+            <ul class="timeline timeline-vertical lg:timeline-horizontal mt-10">
+              <li>
+                <div class="timeline-start">1984</div>
+                <div class="timeline-middle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="h-5 w-5">
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </div>
+                <div class="timeline-end timeline-box">First Macintosh computer</div>
+                <hr />
+              </li>
+              <li>
+                <hr />
+                <div class="timeline-start">1998</div>
+                <div class="timeline-middle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="h-5 w-5">
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </div>
+                <div class="timeline-end timeline-box">iMac</div>
+                <hr />
+              </li>
+              <li>
+                <hr />
+                <div class="timeline-start">2001</div>
+                <div class="timeline-middle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="h-5 w-5">
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </div>
+                <div class="timeline-end timeline-box">iPod</div>
+                <hr />
+              </li>
+              <li>
+                <hr />
+                <div class="timeline-start">2007</div>
+                <div class="timeline-middle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="h-5 w-5">
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </div>
+                <div class="timeline-end timeline-box">iPhone</div>
+                <hr />
+              </li>
+              <li>
+                <hr />
+                <div class="timeline-start">2015</div>
+                <div class="timeline-middle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="h-5 w-5">
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </div>
+                <div class="timeline-end timeline-box">Apple Watch</div>
+              </li>
+            </ul>
+        </section>
     </main>
 </body>
 </html>
