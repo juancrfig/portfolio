@@ -7,3 +7,7 @@ body {
     border-radius: 200px;
     height: clamp(180px, 30vw, 300px);
 }
+
+.navbar {
+    z-index: 100;
+}
