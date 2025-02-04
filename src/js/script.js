@@ -1,4 +1,4 @@
-import {projects} from '../../db.js'
+import {projects, filterComponent} from './components.js'
 
 // Logic for changing the github icon 
 
@@ -36,18 +36,44 @@ function handleScreenResize() {
 function renderDivsSmallScreen() {
 
 	projectsContainer.innerHTML = '';
-
 	projects.projects.slice(0, 3).forEach( (project) => {
-		projectsContainer.innerHTML += renderProject(project);
+		projectsContainer.innerHTML += renderProjectPhone(project);
 	})
 }
 
 function renderBigScreen() {
 
-	// projectsContainer.innerHTML = "XD"
+	projectsContainer.innerHTML = '';
+	projectsContainer.innerHTML += filterComponent;
+
+	projects.projects.slice(0, 3).forEach( (project) => {
+		projectsContainer.innerHTML += renderProjectDesktop(project);
+	})
 }
 
-function renderProject(project) {
+function renderProjectDesktop(project) {
+
+	return `
+	<div class="w-fit m-auto">  			
+			<div class="card bg-base-100 w-64 shadow-xl m-auto mt-10">
+				<figure>
+				  <img
+					src="${project.image}" />
+				</figure>
+				<div class="card-body">
+					<h2 class="card-title font-bold">
+					${project.name}
+					<div class="badge badge-secondary">${project.language}</div>
+					</h2>
+					<p class="text-xs">${project.description}</p>
+					<div class="card-actions justify-end">
+						<div class="btn btn-accent"><a href=${project.url} target="_blank">Check Repository</a></div>
+					</div>
+				</div>
+			</div>`
+}
+
+function renderProjectPhone(project) {
 
 	return `
 	<div class="card bg-base-100 w-64 shadow-xl m-auto mt-10">

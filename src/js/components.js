@@ -27,3 +27,12 @@ export const projects =
         },
     ]
 }
+
+export const filterComponent = `
+<form class="filter flex justify-center gap-2">
+<input class="btn btn-square text-2xl" type="reset" value="×"/>
+<input class="btn p-5 text-yellow-500 font-bold" type="radio" name="frameworks" aria-label="Javascript"/>
+<input class="btn p-5 text-yellow-500 font-bold" type="radio" name="frameworks" aria-label="Python"/>
+<input class="btn p-5 text-yellow-500 font-bold" type="radio" name="frameworks" aria-label="Java"/>
+<input class="btn p-5 text-yellow-500 font-bold" type="radio" name="frameworks" aria-label="Bash"/>
+</form>`
