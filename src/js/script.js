@@ -46,8 +46,13 @@ function renderBigScreen() {
 	projectsContainer.innerHTML = '';
 	projectsContainer.innerHTML += filterComponent;
 
+	const gridContainer = document.createElement('div');
+	gridContainer.setAttribute('class', 'grid grid-cols-3 grid-rows-1 gap-4');
+	projectsContainer.appendChild(gridContainer)
+
+
 	projects.projects.slice(0, 3).forEach( (project) => {
-		projectsContainer.innerHTML += renderProjectDesktop(project);
+		gridContainer.innerHTML += renderProjectDesktop(project);
 	})
 }
 
