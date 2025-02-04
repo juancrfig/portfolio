@@ -1,3 +1,5 @@
+import {projects} from '../../db.js'
+
 // Logic for changing the github icon 
 
 const inputTheme = document.querySelector('#input-theme');
@@ -11,3 +13,61 @@ inputTheme.addEventListener('click', () => {
 	}
 })
 
+
+// LOGIC FOR RENDERING PROJECTS IN SMALL SCREENS
+
+const projectsContainer = document.querySelector('.projects-container');
+
+let isBelowThreshold = null; // Keeps track of the current state
+
+function handleScreenResize() {
+    const isNowBelowThreshold = window.innerWidth < 1000;
+
+    // Check if there's a change in state
+    if (isNowBelowThreshold && isBelowThreshold !== true) {
+        isBelowThreshold = true; // Update state
+        renderDivsSmallScreen(); // Render divs for smaller screens
+    } else if (!isNowBelowThreshold && isBelowThreshold !== false) {
+        isBelowThreshold = false; // Update state
+        handleScreenGrow(); // Do something when the screen grows larger
+    }
+}
+
+function renderDivsSmallScreen() {
+
+	projects.projects.slice(0, 3).forEach( (project) => {
+		projectsContainer.innerHTML += renderProject(project);
+	})
+}
+
+function renderProject(project) {
+
+	return `
+	<div class="card bg-base-100 w-64 shadow-xl m-auto mt-10">
+		<figure>
+		  <img
+			src="${project.image}" />
+		</figure>
+		<div class="card-body">
+			<h2 class="card-title font-bold">
+			${project.name}
+			<div class="badge badge-secondary">${project.language}</div>
+			</h2>
+			<p class="text-xs">${project.description}</p>
+			<div class="card-actions justify-end">
+				<div class="btn btn-accent"><a href=${project.url} target="_blank">Check Repository</a></div>
+			</div>
+		</div>
+	</div>
+	`
+}
+
+function handleScreenGrow() {
+	projectsContainer.innerHTML = '';
+}
+
+// Check initial state
+handleScreenResize();
+
+// Add event listener
+window.addEventListener('resize', handleScreenResize);
