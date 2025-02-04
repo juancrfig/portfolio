@@ -124,8 +124,16 @@
         </section>
 		<section class="h-full bg-base-300 pb-24 pt-1" id="projects">
 			<div class="divider"></div>
-        	<h1 class="text-center text-3xl mt-16">What I've Built</h1>
-			<div class="projects-container"></div>
+        	<h1 class="text-center text-3xl mt-16 mb-10">What I've Built</h1>
+			<div class="projects-container w-full m-auto">
+				<form class="filter flex justify-center gap-2">
+				  <input class="btn btn-square text-2xl" type="reset" value="×"/>
+				  <input class="btn p-5 text-yellow-500 font-bold" type="radio" name="frameworks" aria-label="Javascript"/>
+				  <input class="btn p-5 text-yellow-500 font-bold" type="radio" name="frameworks" aria-label="Python"/>
+				  <input class="btn p-5 text-yellow-500 font-bold" type="radio" name="frameworks" aria-label="Java"/>
+				  <input class="btn p-5 text-yellow-500 font-bold" type="radio" name="frameworks" aria-label="Bash"/>
+				</form>
+			</div>
 		</section>
 		<footer class="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
 		  <aside>

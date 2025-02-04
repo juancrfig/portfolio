@@ -35,9 +35,16 @@ function handleScreenResize() {
 
 function renderDivsSmallScreen() {
 
+	projectsContainer.innerHTML = '';
+
 	projects.projects.slice(0, 3).forEach( (project) => {
 		projectsContainer.innerHTML += renderProject(project);
 	})
+}
+
+function renderBigScreen() {
+
+	// projectsContainer.innerHTML = "XD"
 }
 
 function renderProject(project) {
@@ -63,7 +70,7 @@ function renderProject(project) {
 }
 
 function handleScreenGrow() {
-	projectsContainer.innerHTML = '';
+	renderBigScreen();
 }
 
 // Check initial state
