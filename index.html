@@ -23,7 +23,7 @@
 </head>
 <body class="min-h-screen bg-base-300 h-screen">
     <main>
-        <section class="min-h-full p-1" id="home">
+        <section class="min-h-full pb-0 mb-0 pt-1 h-screen" id="home">
             <div class="navbar bg-base-100 shadow-sm fixed top-0 left-0">
               <div class="navbar-start">
                 <div class="dropdown">
@@ -31,9 +31,9 @@
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
                   </div>
                   <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="https://www.juancrfig.github.io/blog/">My Blog</a></li>
+                    <li><a href="#home" target="_blank">Home</a></li>
+                    <li><a href="#projects" target="_blank">Projects</a></li>
+                    <li><a href="https://www.juancrfig.github.io/blog/" target="_blank">My Blog</a></li>
                   </ul>
                 </div>
                 <label class="flex cursor-pointer gap-2">
@@ -68,13 +68,13 @@
               </div>
               <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="./src/pages/blog.html">My Blog</a></li>
+                    <li><a href="#home" target="_blank">Home</a></li>
+                    <li><a href="#projects" target="_blank">Projects</a></li>
+                    <li><a href="./src/pages/blog.html" target="_blank">My Blog</a></li>
                 </ul>
               </div>
               <div class="navbar-end">
-                <a href="https://www.github.com/juancrfig"><img src="./src/media/icon-github.svg" class="w-10" id="github-img-container"></a>
+                <a href="https://www.github.com/juancrfig" target="_blank"><img src="./src/media/icon-github.svg" class="w-10" id="github-img-container"></a>
               </div>
             </div>
             <div class="m-auto w-fit mt-32">
@@ -122,14 +122,12 @@
             	</ul>
 			</div>
         </section>
-        <div class="divider"></div>
-		<section class="h-full bg-base-300 pb-32" id="projects">
+		<section class="h-full bg-base-300 pb-32 pt-1" id="projects">
         	<h1 class="text-center text-3xl mt-16">What I've Built</h1>
 			<div class="card bg-base-100 w-64 shadow-xl m-auto mt-10">
 			  <figure>
 				<img
-				  src="./src/media/etch-a-sketch.png"
-				  alt="Shoes" />
+				  src="./src/media/etch-a-sketch.png" />
 			  </figure>
 			  <div class="card-body">
 				<h2 class="card-title font-bold">
@@ -138,15 +136,14 @@
 				</h2>
 				<p class="text-xs">A web app that lets users draw on a grid using their mouse or keyboard, with options to reset and customize the grid size.</p>
 				<div class="card-actions justify-end">
-				  <div class="btn btn-accent"><a href="https://github.com/juancrfig/etch-a-sketch">Check repository</a></div>
+				  <div class="btn btn-accent"><a href="https://github.com/juancrfig/etch-a-sketch" target="_blank">Check repository</a></div>
 				</div>
 			  </div>
 			</div>
 			<div class="card bg-base-100 w-64 shadow-xl m-auto mt-10">
 				<figure>
 				  <img
-					src="./src/media/pass-generator.png"
-					alt="Shoes" />
+					src="./src/media/pass-generator.png" />
 				</figure>
 				<div class="card-body">
 				  <h2 class="card-title font-bold">
@@ -155,15 +152,14 @@
 				  </h2>
 				  <p class="text-xs">A web app that generates random, secure passwords instantly.</p>
 				  <div class="card-actions justify-end">
-					<div class="btn btn-accent"><a href="https://github.com/juancrfig/passGenerator">Check repository</a></div>
+					<div class="btn btn-accent"><a href="https://github.com/juancrfig/passGenerator" target="_blank">Check repository</a></div>
 				  </div>
 				</div>
 			  </div>
 			  <div class="card bg-base-100 w-64 shadow-xl m-auto mt-10">
 				<figure>
 				  <img
-					src="./src/media/jarvis-image.png"
-					alt="Shoes" />
+					src="./src/media/jarvis-image.png" />
 				</figure>
 				<div class="card-body">
 				  <h2 class="card-title font-bold">
@@ -172,7 +168,7 @@
 				  </h2>
 				  <p class="text-xs">Asistente de la terminal para Campuslands.</p>
 				  <div class="card-actions justify-end">
-					<div class="btn btn-accent"><a href="https://github.com/juancrfig/jarvis">Check repository</a></div>
+					<div class="btn btn-accent"><a href="https://github.com/juancrfig/jarvis" target="_blank">Check repository</a></div>
 				  </div>
 				</div>
 			  </div>
@@ -196,6 +192,24 @@
 			  Providing reliable tech since 2025
 			</p>
 		  </aside>
+		  <nav>
+			<h6 class="footer-title">Social</h6>
+			<div class="grid grid-flow-col gap-4">
+			  <a href="https://x.com/juancrfig" target="_blank">
+				<svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 20 12">
+					<path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+				  </svg>
+			  </a>
+			  <a href="https://www.linkedin.com/in/juan-ram%C3%ADrez-6a7435203/" target="_blank">
+				<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<title>Linkedin</title>
+					<g id="Icon/Social/linkedin-color" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+						<path d="M20.9716667,33.5527338 L25.001,33.5527338 L25.001,27.1328007 C25.001,25.439485 25.3213333,23.7988354 27.4206667,23.7988354 C29.491,23.7988354 29.517,25.7351486 29.517,27.2404662 L29.517,33.5527338 L33.5506667,33.5527338 L33.5506667,26.4341413 C33.5506667,22.9381777 32.796,20.2505391 28.711,20.2505391 C26.7483333,20.2505391 25.432,21.3265278 24.8943333,22.3471839 L24.839,22.3471839 L24.839,20.5725357 L20.9716667,20.5725357 L20.9716667,33.5527338 Z M16.423,14.1202696 C15.1273333,14.1202696 14.0823333,15.1682587 14.0823333,16.4595785 C14.0823333,17.7508984 15.1273333,18.7992208 16.423,18.7992208 C17.7133333,18.7992208 18.761,17.7508984 18.761,16.4595785 C18.761,15.1682587 17.7133333,14.1202696 16.423,14.1202696 L16.423,14.1202696 Z M14.4026667,33.5527338 L18.4406667,33.5527338 L18.4406667,20.5725357 L14.4026667,20.5725357 L14.4026667,33.5527338 Z M9.76633333,40 C8.79033333,40 8,39.2090082 8,38.2336851 L8,9.76631493 C8,8.79065843 8.79033333,8 9.76633333,8 L38.234,8 C39.2093333,8 40,8.79065843 40,9.76631493 L40,38.2336851 C40,39.2090082 39.2093333,40 38.234,40 L9.76633333,40 Z" id="Shape" fill="#FFFFFF"></path>
+					</g>
+				</svg>
+			  </a>
+			</div>
+		  </nav>
 		</footer>
     </main>
 </body>
