@@ -47,8 +47,8 @@ function renderBigScreen() {
 	projectsContainer.innerHTML += filterComponent;
 
 	const gridContainer = document.createElement('div');
-	gridContainer.setAttribute('class', 'grid grid-cols-3 grid-rows-1 gap-4');
-	projectsContainer.appendChild(gridContainer)
+	gridContainer.setAttribute('class', 'grid grid-cols-3 grid-rows-1 gap-4 mt-10');
+	projectsContainer.appendChild(gridContainer);
 
 
 	projects.projects.slice(0, 3).forEach( (project) => {
