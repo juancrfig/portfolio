@@ -50,10 +50,14 @@ function renderBigScreen() {
 		});
 	});
 
+	const btnReset = document.querySelector('.btn-filter-reset');
+
+	btnReset.addEventListener('click', renderBigScreen)
+
 	const gridContainer = document.createElement('div');
 	gridContainer.setAttribute(
 		'class',
-		'grid grid-cols-3 grid-rows-1 gap-4 mt-10'
+		'grid grid-cols-3 grid-rows-1 gap-4 mt-10 grid-container'
 	);
 	projectsContainer.appendChild(gridContainer);
 
@@ -63,9 +67,16 @@ function renderBigScreen() {
 }
 
 function applyFilter(language) {
-	console.log("Language", language, "selected!");
+	const gridContainer = document.querySelector('.grid-container');
+	gridContainer.innerHTML = '';
 
-	
+	const filteredProjects = projects.projects.filter( (project) => {
+		return project.language === language;
+	})
+
+	filteredProjects.forEach( project => {
+		gridContainer.innerHTML += renderProjectDesktop(project);
+	})
 }
 
 function renderProjectDesktop(project) {
