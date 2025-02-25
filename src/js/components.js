@@ -20,7 +20,7 @@ export const projects =
 	{
 	    "name": "Weather App",
 	    "description": "Minimalist webpage that uses API requests for showing weather information based on user's input",
-	    "image": "./src/media/weatherApp.png",
+	    "image": "./src/media/weatherAppIcon.jpg",
 	    "language": "Javascript",
 	    "rating": 3,
 	    "url": "https://github.com/juancrfig/weatherApp"
