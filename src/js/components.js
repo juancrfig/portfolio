@@ -17,12 +17,20 @@ export const projects =
             "rating": 2,
             "url": "https://github.com/juancrfig/autoQuery"
         },
+	{
+	    "name": "Weather App",
+	    "description": "Minimalist webpage that uses API requests for showing weather information based on user's input",
+	    "image": "./src/media/weatherApp.png",
+	    "language": "Javascript",
+	    "rating": 3,
+	    "url": "https://github.com/juancrfig/weatherApp"
+	},
         {
             "name": "Etch-a-Sketch",
             "description": "A web app that lets users draw on a grid using their mouse or keyboard, with options to reset and customize the grid size.",
             "image": "./src/media/etch-a-sketch.png",
             "language": "Javascript",
-            "rating": 3,
+            "rating": 4,
             "url": "https://github.com/juancrfig/etch-a-sketch"
         },
         {
@@ -30,7 +38,7 @@ export const projects =
             "description": "A web app that generates random, secure passwords instantly.",
             "image": "./src/media/pass-generator.png",
             "language": "Javascript",
-            "rating": 4,
+            "rating": 5,
             "url": "https://github.com/juancrfig/passGenerator"
         },
     ]
