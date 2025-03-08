@@ -4,7 +4,7 @@ export const projects =
         {
             "name": "Jarvis",
             "description": "Asistente de la terminal para Campuslands.",
-            "image": "./src/media/jarvis-image.png",
+            "image": "./src/media/jarvis-icon.png",
             "language": "Bash",
             "rating": 1,
             "url": "https://github.com/juancrfig/jarvis"
